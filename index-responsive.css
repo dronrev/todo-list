@@ -1,0 +1,20 @@
+@media only screen and (max-width: 600px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    main section{
+
+    }
+    .list-todo{
+        font-size: 0.6rem;
+        padding: 0.7rem;
+    }
+    section div{
+        font-size: 0.7rem;
+    }
+    .item-list-todo{
+        font-size: 0.7rem;
+    }
+}
