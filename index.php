@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="index-responsive.css">
     <script src="check-todo-list.js" defer></script>
     <script src="add-new-todo.js" defer></script>
-    <script src="display-todo.js" defer></script>
+    <script src="display-todo-jquery.js" defer></script>
     <script src="setting.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>To Do List</title>
 </head>
 <body>
 <header style="display: flex; justify-content:center;">
@@ -29,19 +29,30 @@
                     <li>
                         <input type="checkbox" id="testing" onclick="checking(id)">Complete Personal to do app 
                         <span class="setting-button">
-                            <button class="set-btn"><img src="./assets/images/setting-icon.png" alt=""></button>
+                            <button class="set-btn" id="but-1"><img src="./assets/images/setting-icon.png" alt=""></button>
                         </span>
-                        <div class="submenu">
-                            <a href="">1</a>
-                            <a href="">2</a>
-                            <a href="">3</a>
+                        <div class="submenu" id="menu-1">
+                            <a href="">
+                                <img style="max-height:1rem" src="./assets/images/pen-to-square-regular.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img style="max-height:1rem" src="./assets/images/trash-solid.svg" alt="">
+                            </a>
                         </div>
                     </li>
                     <li>
                         <input type="checkbox" id="testing2" onclick="checking(id)">List 2
                         <span class="setting-button">
-                            <button class="set-btn"><img src="./assets/images/setting-icon.png" alt=""></button>
+                            <button class="set-btn" id="but-2"><img src="./assets/images/setting-icon.png" alt=""></button>
                         </span>
+                        <div class="submenu" id="menu-2">
+                            <a href="">
+                                <img style="max-height:1rem" src="./assets/images/pen-to-square-regular.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img style="max-height:1rem" src="./assets/images/trash-solid.svg" alt="">
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </div>

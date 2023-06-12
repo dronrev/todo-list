@@ -5,10 +5,7 @@ xhr.onload = function(){
     console.log(JSON.parse(this.responseText));
 
     var data = JSON.parse(this.responseText);
-
     for(let item of data){
-        console.log(item)
-                
         const parentTodo = document.getElementById('item-list-todo');
 
         const newTodo = document.createElement('li');
